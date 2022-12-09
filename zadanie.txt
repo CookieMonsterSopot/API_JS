@@ -1,0 +1,3 @@
+// Zad 2.
+// a) Usuń wszystkie elementy z body przy pomocy element.remove()
+// b) Odtwórz stronę przy pomocy wcześniej poznanych metod (document.createElement, insertAdjacentHTML, setAttribute, appendChild itd.).
