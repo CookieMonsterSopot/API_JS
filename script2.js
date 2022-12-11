@@ -61,13 +61,17 @@ function showAll() {
   article4.children[1].innerHTML =
     "You don't have to install anything additional, just JavaScript will do. We have a few methods called 'selectors', these methods are used to access DOM elements and are found on the global 'document' object, which is an object representation of the whole HTML document. Here are <strong>some</strong> of them:";
 
-  document.querySelectorAll("ul")[0].innerHTML =
-    "&#8226 document.querySelector('cssSelectorHere')";
-  document.querySelectorAll("ul")[1].innerHTML =
-    "&#8226 document.getElementById('elementsIdHere')";
+  const li1 = document.createElement("li");
+  list.appendChild(li1);
+  li1.textContent = "document.querySelector('cssSelectorHere')";
 
-  document.querySelectorAll("ul")[1].innerHTML =
-    "&#8226 document.getElementsByClassName('classNameHere')";
+  const li2 = document.createElement("li");
+  list.appendChild(li2);
+  li2.textContent = "document.getElementById('elementsIdHere')";
+
+  const li3 = document.createElement("li");
+  list.appendChild(li3);
+  li3.textContent = "document.getElementsByClassName('classNameHere')";
 }
 
 setTimeout(function () {
@@ -82,4 +86,4 @@ setTimeout(function () {
     clearAll();
   }
 }, 5000);
-console.log(listItems);
+console.log(document.querySelector("ul"));
