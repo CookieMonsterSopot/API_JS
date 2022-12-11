@@ -32,9 +32,9 @@ function clearAll() {
   article4.children[0].innerHTML = "";
   article4.children[1].innerHTML = "";
 
-  list.children[0].innerHTML = "";
-  list.children[1].innerHTML = "";
-  list.children[2].innerHTML = "";
+  document.querySelectorAll("ul")[0].innerHTML = "";
+  document.querySelectorAll("ul")[1].innerHTML = "";
+  document.querySelectorAll("ul")[2].innerHTML = "";
 }
 
 function showAll() {
@@ -60,10 +60,14 @@ function showAll() {
   article4.children[0].innerHTML = "How to access the DOM?";
   article4.children[1].innerHTML =
     "You don't have to install anything additional, just JavaScript will do. We have a few methods called 'selectors', these methods are used to access DOM elements and are found on the global 'document' object, which is an object representation of the whole HTML document. Here are <strong>some</strong> of them:";
-  list.children[0].innerHTML = "document.querySelector('cssSelectorHere')";
-  list.children[1].innerHTML = "document.getElementById('elementsIdHere')";
-  list.children[2].innerHTML =
-    "document.getElementsByClassName('classNameHere')";
+
+  document.querySelectorAll("ul")[0].innerHTML =
+    "&#8226 document.querySelector('cssSelectorHere')";
+  document.querySelectorAll("ul")[1].innerHTML =
+    "&#8226 document.getElementById('elementsIdHere')";
+
+  document.querySelectorAll("ul")[1].innerHTML =
+    "&#8226 document.getElementsByClassName('classNameHere')";
 }
 
 setTimeout(function () {
@@ -78,3 +82,4 @@ setTimeout(function () {
     clearAll();
   }
 }, 5000);
+console.log(listItems);
