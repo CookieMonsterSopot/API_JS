@@ -1,3 +1,36 @@
+SELEKTORY
+a) document.querySelector() - zwraca pierwszy napotkany
+	- ID - ("#")
+	- CLASS - (".")
+	- TAGNAME - ("")
+
+b) document.querySelectorAll() - zwraca wszystkie okreslone ("")
+c) document.getElementById()
+d) document.getElementsByClassName()
+
+SUBSELEKTORY
+a) el.children
+b) el.childNodes
+c) el.firstElementChild
+d) el.lastElementChild
+e) el.nextElementSibling
+f) element.parentElement
+
+DODAWANIE / TWORZENIE
+a) document.createElement()
+b) element.appendChild()
+c) element.insertBefore()
+d) el.insertAdjacentHTML()
+
+USUWANIE
+el.innerHTML
+el.remove()
+el.removeChild()
+
+KLONOWANIE
+el.cloneNode()
+el.cloneNode(true) - glebokie
+el.cloneNode(false) - plytkie	
 moje:
 
 const navH1 = document.querySelector("h1");
