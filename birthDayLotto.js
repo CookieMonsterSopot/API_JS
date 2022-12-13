@@ -1,4 +1,4 @@
-// let birthDay = parseInt(prompt("Your birthday: ddmmyy", ""));
+let birthDay = parseInt(prompt("Your birthday: ddmmyy", ""));
 let numRes = [];
 
 for (let i = 0; i < 300377; i++) {
